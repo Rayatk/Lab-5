@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Getting Started</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>AddressBook</h1>
+    <p th:text="'AddressBook ID: ' + ${addressBook.id}" ></p>
+    <p th:each="buddy : ${addressBook.list}">
+        id: <b><span th:text="${buddy.id}"/></b>
+        Name: <b><span th:text="${buddy.name}"/></b>
+        Phone Number: <b><span th:text="${buddy.number}"/></b>
+    </p>
+    <a href="/start">Submit another message</a>
+</body>
+</html>
