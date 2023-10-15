@@ -31,7 +31,7 @@ public class WebController {
         addressBook.addBuddyInfo(buddyInfo);
         buddyInfoRepository.save(buddyInfo);
         addressBookRepository.save(addressBook);
-        return "buddy";
+        return "buddyInfo";
     }
 
     @PostMapping("/addressBookCreate")

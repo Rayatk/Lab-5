@@ -44,9 +44,7 @@ public class AccessingDataJpaApplication {
 
             log.info("List of Buddies by name:");
             log.info("------------------------");
-            buddyInfoRepository.findByName("SpongeBob").forEach(bob -> {
-                log.info(bob.getId() + " | " + bob.getName() + " | " + bob.getNumber());
-            });
+            buddyInfoRepository.findByName("SpongeBob").forEach(bob -> log.info(bob.getId() + " | " + bob.getName() + " | " + bob.getNumber()));
             log.info("");
 
             book.addBuddyInfo(buddy1);
