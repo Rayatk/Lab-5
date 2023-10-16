@@ -22,18 +22,20 @@ public class AccessingDataJpaApplication {
             buddy1.setId(1);
             buddy1.setName("SpongeBob");
             buddy1.setNumber(123456);
+            buddy1.setAddress("Bikini Bottom");
 
-            BuddyInfo buddy2 = new BuddyInfo();
-            buddy2.setId(2);
-            buddy2.setName("Patrick");
-            buddy2.setNumber(7891011);
+            //BuddyInfo buddy2 = new BuddyInfo();
+            //buddy2.setId(2);
+            //buddy2.setName("Patrick");
+            //buddy2.setNumber(7891011);
+            //buddy2.setAddress("Bikini Bottom");
 
             AddressBook book = new AddressBook();
             book.setId(1);
             book.setName("Bikini Bottom");
 
             buddyInfoRepository.save(buddy1);
-            buddyInfoRepository.save(buddy2);
+            //buddyInfoRepository.save(buddy2);
 
             log.info("List of Buddies:");
             log.info("----------------");
@@ -48,7 +50,7 @@ public class AccessingDataJpaApplication {
             log.info("");
 
             book.addBuddyInfo(buddy1);
-            book.addBuddyInfo(buddy2);
+            //book.addBuddyInfo(buddy2);
             addressBookRepository.save(book);
 
             log.info("List of Address Books:");
