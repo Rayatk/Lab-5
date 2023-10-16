@@ -28,7 +28,8 @@ public class BuddyInfoControllerTest {
         this.mockMvc.perform(post("/buddyInfo?bookId=1").contentType(MediaType.APPLICATION_JSON).content("""
                 {
                 \t"name":"SpongeBob",
-                \t"number":"1234456"
+                \t"number":1234456,
+                \t"address":"Bikini Bottom"
                 }""")).andDo(print()).andExpect(status().isOk());
         this.mockMvc.perform(get("/buddyInfo?bookId=1&buddyId=1")).andDo(print()).andExpect(status().isOk()).andExpect(content().string(containsString("\"name\":\"SpongeBob\"")));
     }
@@ -39,7 +40,8 @@ public class BuddyInfoControllerTest {
         this.mockMvc.perform(post("/buddyInfo?bookId=1").contentType(MediaType.APPLICATION_JSON).content("""
                 {
                 \t"name":"SpongeBob",
-                \t"number":"1234456"
+                \t"number":1234456,
+                \t"address":"Bikini Bottom"
                 }""")).andDo(print()).andExpect(status().isOk());
     }
 
@@ -49,7 +51,8 @@ public class BuddyInfoControllerTest {
         this.mockMvc.perform(post("/buddyInfo?bookId=1").contentType(MediaType.APPLICATION_JSON).content("""
                 {
                 \t"name":"SpongeBob",
-                \t"number":"1234456"
+                \t"number":1234456,
+                \t"address":"Bikini Bottom"
                 }""")).andDo(print()).andExpect(status().isOk());
         this.mockMvc.perform(delete("/buddyInfo?bookId=1&buddyId=1")).andDo(print()).andExpect(status().isOk()).andExpect(content().string(containsString("\"name\":\"SpongeBob\"")));
     }

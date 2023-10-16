@@ -60,13 +60,13 @@ public class AddressBook {
 
     public static void main(String[] args) {
         AddressBook book = new AddressBook("Bikini Bottom");
-        BuddyInfo buddy1 = new BuddyInfo("SpongeBob", 123456);
-        BuddyInfo buddy2 = new BuddyInfo("Patrick", 7891011);
+        BuddyInfo buddy1 = new BuddyInfo("SpongeBob", 123456, "Bikini Bottom");
+        BuddyInfo buddy2 = new BuddyInfo("Patrick", 7891011, "Bikini Bottom");
         book.addBuddyInfo(buddy1);
         book.addBuddyInfo(buddy2);
         System.out.println(book.getName() + ":");
         for (BuddyInfo buddyInfo : book.list) {
-            System.out.println(buddyInfo.getName() + ": " + buddyInfo.getNumber());
+            System.out.println(buddyInfo.getName() + ": " + buddyInfo.getNumber() + ", " + buddyInfo.getAddress());
         }
     }
 }

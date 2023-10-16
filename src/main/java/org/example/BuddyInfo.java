@@ -10,6 +10,8 @@ public class BuddyInfo {
     private String name;
     private int number;
 
+    private String address;
+
     @ManyToOne(cascade = CascadeType.ALL)
     private AddressBook addressBook;
 
@@ -17,9 +19,10 @@ public class BuddyInfo {
 
     }
 
-    public BuddyInfo(String name, int number) {
+    public BuddyInfo(String name, int number, String address) {
         this.name = name;
         this.number = number;
+        this.address = address;
     }
 
     public int getId() {
@@ -32,6 +35,10 @@ public class BuddyInfo {
 
     public int getNumber() {
         return number;
+    }
+
+    public String getAddress() {
+        return address;
     }
 
     public AddressBook getAddressBook() {
@@ -48,6 +55,10 @@ public class BuddyInfo {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public void setAddressBook(AddressBook addressBook) {

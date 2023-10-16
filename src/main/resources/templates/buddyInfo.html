@@ -7,9 +7,10 @@
 </head>
 <body>
     <h1>BuddyInfo</h1>
+    <p th:text="'Id: ' + ${buddy.id}" ></p>
     <p th:text="'Name: ' + ${buddy.name}" ></p>
     <p th:text="'Phone Number: ' + ${buddy.number}" ></p>
-    <p th:text="'Id: ' + ${buddy.id}" ></p>
+    <p th:text="'Address: ' + ${buddy.address}" ></p>
     <a href="/start">Submit another message</a>
 </body>
 </html>
