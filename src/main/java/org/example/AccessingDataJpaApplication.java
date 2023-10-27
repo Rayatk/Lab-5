@@ -40,13 +40,13 @@ public class AccessingDataJpaApplication {
             log.info("List of Buddies:");
             log.info("----------------");
             for (BuddyInfo buddyInfo : buddyInfoRepository.findAll()) {
-                log.info(buddyInfo.getId() + " | " + buddyInfo.getName() + " | " + buddyInfo.getNumber());
+                log.info(buddyInfo.getId() + " | " + buddyInfo.getName() + " | " + buddyInfo.getNumber() + " | " + buddyInfo.getAddress());
             }
             log.info("");
 
             log.info("List of Buddies by name:");
             log.info("------------------------");
-            buddyInfoRepository.findByName("SpongeBob").forEach(bob -> log.info(bob.getId() + " | " + bob.getName() + " | " + bob.getNumber()));
+            buddyInfoRepository.findByName("SpongeBob").forEach(bob -> log.info(bob.getId() + " | " + bob.getName() + " | " + bob.getNumber() + " | " + bob.getAddress()));
             log.info("");
 
             book.addBuddyInfo(buddy1);

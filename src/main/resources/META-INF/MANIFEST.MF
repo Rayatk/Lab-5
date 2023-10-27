@@ -1,3 +1,35 @@
 Manifest-Version: 1.0
 Main-Class: org.example.AccessingDataJpaApplication
+Class-Path: spring-boot-autoconfigure-3.1.4.jar spring-core-6.0.12.jar s
+ pring-aspects-6.0.12.jar spring-boot-starter-jdbc-3.1.4.jar jakarta.inj
+ ect-api-2.0.1.jar spring-orm-6.0.12.jar spring-expression-6.0.12.jar sp
+ ring-aop-6.0.12.jar spring-jdbc-6.0.12.jar spring-boot-starter-tomcat-3
+ .1.4.jar istack-commons-runtime-4.1.2.jar spring-boot-starter-data-rest
+ -3.1.4.jar logback-core-1.4.11.jar aspectjweaver-1.9.20.jar spring-boot
+ -starter-3.1.4.jar spring-boot-starter-thymeleaf-3.1.4.jar tomcat-embed
+ -core-10.1.13.jar spring-beans-6.0.12.jar h2-2.1.214.jar spring-boot-de
+ vtools-3.1.4.jar jul-to-slf4j-2.0.9.jar spring-boot-starter-json-3.1.4.
+ jar spring-boot-starter-aop-3.1.4.jar spring-plugin-core-3.0.0.jar spri
+ ng-data-rest-core-4.1.4.jar log4j-to-slf4j-2.20.0.jar spring-jcl-6.0.12
+ .jar jboss-logging-3.5.3.Final.jar jackson-module-parameter-names-2.15.
+ 2.jar spring-tx-6.0.12.jar jaxb-core-4.0.3.jar attoparser-2.0.7.RELEASE
+ .jar spring-data-jpa-3.1.4.jar spring-boot-starter-logging-3.1.4.jar sl
+ f4j-api-2.0.9.jar jakarta.annotation-api-2.1.1.jar asm-9.3.jar accessor
+ s-smart-2.4.11.jar jakarta.transaction-api-2.0.1.jar spring-web-6.0.12.
+ jar jackson-databind-2.15.2.jar jackson-datatype-jdk8-2.15.2.jar spring
+ -data-commons-3.1.4.jar jackson-datatype-jsr310-2.15.2.jar jackson-core
+ -2.15.2.jar micrometer-commons-1.11.4.jar byte-buddy-1.14.8.jar spring-
+ hateoas-2.1.2.jar spring-boot-starter-data-jpa-3.1.4.jar hibernate-core
+ -6.2.9.Final.jar jaxb-runtime-4.0.3.jar log4j-api-2.20.0.jar json-path-
+ 2.8.0.jar txw2-4.0.3.jar spring-context-6.0.12.jar jakarta.activation-a
+ pi-2.1.2.jar jakarta.persistence-api-3.1.0.jar antlr4-runtime-4.10.1.ja
+ r tomcat-embed-el-10.1.13.jar jakarta.xml.bind-api-4.0.1.jar micrometer
+ -observation-1.11.4.jar thymeleaf-3.1.2.RELEASE.jar spring-boot-starter
+ -web-3.1.4.jar logback-classic-1.4.11.jar spring-webmvc-6.0.12.jar hibe
+ rnate-commons-annotations-6.0.6.Final.jar spring-data-rest-webmvc-4.1.4
+ .jar jackson-annotations-2.15.2.jar evo-inflector-1.3.jar snakeyaml-1.3
+ 3.jar HikariCP-5.0.1.jar json-smart-2.4.11.jar thymeleaf-spring6-3.1.2.
+ RELEASE.jar tomcat-embed-websocket-10.1.13.jar jandex-3.0.5.jar classma
+ te-1.5.1.jar unbescape-1.1.6.RELEASE.jar spring-boot-3.1.4.jar angus-ac
+ tivation-2.0.1.jar
 
